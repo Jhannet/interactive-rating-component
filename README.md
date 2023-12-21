@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot.jpg)
+![](./Screenshot.png)
 
 ### Links
 
 - Solution URL: [interactive-rating-component repository](https://github.com/Jhannet/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Site on netlify](https://chipper-moxie-86f5ea.netlify.app)
 
 ## My process
 
