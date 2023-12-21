@@ -1,0 +1,128 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --medium-dark-blue: hsl(213, 19%, 24%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 380px) {
+    .interactive-rating-container {
+        width: 260px !important;
+    }
+    .start-icon {
+        height: 45px !important;
+        width: 45px !important;
+    }
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: var(--very-dark-blue);
+    position: relative;
+}
+
+.interactive-rating-container {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+
+    font-family: 'Overpass';
+    width: 345px;
+    height: 334px;
+    background-color: var(--dark-blue);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.interactive-rating-container > div {
+    margin-top: 25px;
+}
+
+.interactive-rating-container > div:first-child {
+    margin-top: 0;
+}
+
+/*rating options*/
+.start-icon {
+    background-color: var(--medium-dark-blue);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-text {
+    color: var(--white);
+}
+
+.rating-text p {
+    color: var(--light-grey);
+}
+
+.rating-options {
+    margin: 28px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-options a {
+    text-decoration: none;
+    color: var(--medium-grey);
+}
+
+.rating-options a:not(.rating-option-active):hover, .rating-options a:not(.rating-option-active):active {
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+
+.rating-option-active {
+    background-color: var(--orange);
+    color: var(--white) !important;
+}
+
+/*submit button*/
+.submit-button {
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button div:hover, .button div:active {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* rating result styles*/
+.thanks-container {
+    display: none;
+    text-align: center;
+}
+
+.rating-result {
+    background-color: var(--medium-dark-blue);
+    color: var(--orange);
+    border-radius: 50px;
+    font-size: 15px;
+    text-align: center;
+    width: fit-content;
+    padding: 1px 10px;
+    margin: auto;
+}
+
+.rating-result p {
+    margin: 10px;
+}

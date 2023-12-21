@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="./src/script.js"></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <div class="interactive-rating-container rating-state">
+    <div class="header">
+      <div class="start-icon"><img src="./src/images/icon-star.svg" alt="start-icon"></div>
+    </div>
+    <div class="content">
+      <div class="rating-text">
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+      <div class="rating-options">
+        <a href="#" class="start-icon" id="option-1" tabindex="1"><div>1</div></a>
+        <a href="#" class="start-icon" id="option-2" tabindex="2"><div>2</div></a>
+        <a href="#" class="start-icon" id="option-3" tabindex="3"><div>3</div></a>
+        <a href="#" class="start-icon" id="option-4" tabindex="4"><div>4</div></a>
+        <a href="#" class="start-icon" id="option-5" tabindex="5"><div>5</div></a>
+      </div>
+    </div>
+    <div class="button">
+      <a href="#" id="submit-button" tabindex="6"><div class="submit-button">SUBMIT</div></a>
+    </div>
+  </div>
+
+  <div class="interactive-rating-container thanks-container">
+    <div class="header">
+      <div class="thank-you-image"><img src="./src/images/illustration-thank-you.svg"></div>
+    </div>
+    <div class="content">
+      <div class="rating-result">
+        <p>You selected <!-- Add rating here --> out of 5</p>
+      </div>
+      <div class="rating-text">
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
